@@ -1,5 +1,3 @@
-#Script Auto Install OCS Panel
-
 Berikut adalah langkah-langkah eksekusi Script Auto Install untuk Debian 7 32 Bit :
 
 1. Install sertifikat dengan perintah :
