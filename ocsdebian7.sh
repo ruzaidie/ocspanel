@@ -17,8 +17,8 @@ apt-get -y install nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt
 rm /etc/nginx/sites-enabled/default && rm /etc/nginx/sites-available/default
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.backup
 mv /etc/nginx/conf.d/vps.conf /etc/nginx/conf.d/vps.conf.backup
-wget -O /etc/nginx/nginx.conf "https://gist.githubusercontent.com/kitketxss/89f901e2d36e345f256d507107878b63/raw/0e048ef885ebe26a03b48903da95d568c1856814/nginx.conf"
-wget -O /etc/nginx/conf.d/vps.conf "https://gist.githubusercontent.com/kitketxss/78b76583b77ba94fbe5cd8038af85bd2/raw/36f806682ed0ff9c1c806b7946b0f3fd911e9219/vps.conf"
+wget -O /etc/nginx/nginx.conf "https://github.com/blazevpn/ocspanel/blob/master/nginx.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://github.com/blazevpn/ocspanel/blob/master/vps.conf"
 sed -i 's/cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php5/fpm/php.ini
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
 
