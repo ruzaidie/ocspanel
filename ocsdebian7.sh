@@ -6,6 +6,7 @@
 # 
 
 #install MySQL Server
+cd
 apt-get update
 apt-get -y install mysql-server
 
@@ -33,6 +34,7 @@ service php5-fpm restart
 service nginx restart
 
 #menginstall OCS Panel
+cd
 mysql -u root -p
 CREATE DATABASE IF NOT EXISTS OCSPANEL
 EXIT
@@ -73,3 +75,4 @@ echo "Password Baru: Isikan dengan password OCS yang anda inginkan"  | tee -a lo
 echo "Masukkan Ulang Password: Input ulang password"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "===========================================" | tee -a log-install.txt
+cd
