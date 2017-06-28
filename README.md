@@ -2,7 +2,7 @@ Berikut adalah langkah-langkah eksekusi Script Auto Install untuk Debian 7 32 Bi
 
 1. Download script dengan perintah :
 
-https://github.com/blazevpn/ocspanel/blob/master/ocsdebian7.sh
+wget https://github.com/blazevpn/ocspanel/blob/master/ocsdebian7.sh
 
 2. Tetapkan permission dengan perintah :
 
