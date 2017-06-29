@@ -5,13 +5,7 @@
 # ==================================================
 # 
 
-#install MySQL Server
-cd
-apt-get update
-apt-get -y install mysql-server
-
 #configure MySql server
-mysql_secure_installation
 chown -R mysql:mysql /var/lib/mysql/
 chmod -R 755 /var/lib/mysql/
 apt-get -y install nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt
